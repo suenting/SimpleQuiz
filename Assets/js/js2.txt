@@ -1,0 +1,7 @@
+// evaluate
+var arr = [1,2,3];
+var sum=0;
+for (var x in arr){
+	sum+=x;
+}
+return sum/3;

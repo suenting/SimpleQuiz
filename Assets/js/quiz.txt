@@ -1,0 +1,45 @@
+s evaluate {}+{}
+w {}
+w 0
+r NaN
+
+s evaluate []+[]
+w []
+r ""
+w 0
+
+s evaluate {}+[]
+w {}
+w []
+r 0
+
+s evaluate (null + null)
+r 0
+w undefined
+w null
+
+s evaluate (null == 0)
+w true
+r false
+
+s evaluate ((.1+.2+.3) == .6)
+w true
+r false
+
+s evaluate (false == 0)
+r true
+w false
+
+s evaluate typeof(Nan)
+r number
+w undefined
+w constant
+
+se js2.txt
+w 2
+w 3
+r 4
+
+se js1.txt
+w 0
+r 1

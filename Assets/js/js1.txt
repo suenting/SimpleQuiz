@@ -1,0 +1,7 @@
+// evaluate x
+var x = 0;
+if(true)
+{
+   var x=1;
+}
+return x;
