@@ -1,0 +1,88 @@
+s creating a object with new[] and freeing with delete will cause a memory leak
+r true
+w false
+
+s objects created via new are allocated on the heap
+r true
+w false
+
+s as a best practice assignment operators should always
+w be virtual
+w be const
+w be static
+r return *this
+
+s what is the difference between pass-by-value vs reference
+w pass by value is faster
+w pass by reference is more memory efficient
+r pass by value invokes a copy constructor
+w pass by reference can be null
+
+s which of the following is used for safe downcasting
+w static_cast<T>
+r dynamic_cast<T>
+w const_cast<T>
+w reinterpret_cast<T>
+
+s which of the following cannot be done with static_cast
+r casting a const object to non-const
+w casting a non-const object to const
+w base class pointer to derived class pointer
+w void* to typed pointer
+
+s which of the following is true
+w inline is always a great idea for performance
+w __forceinline (MSVC) will always inline
+w you should only ever inline pure functions
+r excessive use of inline will create a large code object
+
+s which of the following is not true
+r a reference is not an alias
+w a reference is never null
+w a reference can be copied
+w a reference can be const
+
+se cpp1.txt
+w a
+w b
+r no one knows
+
+s What is the sizeof(int)?
+w 1
+w 4
+r it depends
+w 32
+w word size
+
+s As a best practice a "Get" function should always be...
+r const
+w static
+w virtual
+
+s Which of the following should never be stored in a vector?
+w a pointer
+w a reference
+w a large object
+r a base class of a polymorphic object
+
+s Which of the following statements is not true?
+w excessive use of inline may result in a large code object
+r inlines are always equivalent to macros
+w you should prefer inlines over macros
+w the compiler may choose to ignore your request to inline
+
+s Which of the following smart pointers is ref counted?
+r std::shared_ptr
+w std::scoped_ptr
+w std::auto_prt
+
+s Which of the following statements is not true?
+w static can refer to non-export to a non-class function
+w static can refer to a variable whos state persists within subsequent function calls
+w static can refer to a variable whos state persists across all instances of a class
+w static can refer to a class function which may be called without an instance
+r static is thread safe
+
+
+
+

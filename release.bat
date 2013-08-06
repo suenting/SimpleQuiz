@@ -1,0 +1,1 @@
+emcc -o release.js  -s ALLOW_MEMORY_GROWTH=0  main.cpp Quiz.cpp AssetManager.cpp ConfigManager.cpp Background.cpp Question.cpp SingleChoiceQuestion.cpp Widget.cpp WidgetButton.cpp --preload-file Assets

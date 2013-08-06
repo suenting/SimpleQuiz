@@ -1,0 +1,1 @@
+emcc -o debug.html  -s ALLOW_MEMORY_GROWTH=1  main.cpp ConfigManager.cpp Quiz.cpp AssetManager.cpp Background.cpp Question.cpp SingleChoiceQuestion.cpp Widget.cpp WidgetButton.cpp --preload-file Assets
