@@ -69,7 +69,7 @@ void Quiz::Initialize()
 	mpBackground = new Background();
 	mpBackground->Load();
 #if Win32
-	window = SDL_CreateWindow("Quiz Magic", 100, 100, 800, 600, SDL_WINDOW_SHOWN);
+	window = SDL_CreateWindow("A Simple Quiz", 100, 100, 800, 600, SDL_WINDOW_SHOWN);
 	renderer = SDL_CreateRenderer(window, -1, 0);
 	screen = SDL_GetWindowSurface(window);
 #endif
